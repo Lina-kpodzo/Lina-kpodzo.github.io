@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio - Kpodzo Lina</title>
+  
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Centrage des projets */
+    .isotope-container {
+      display: flex !important;
+      justify-content: center !important;
+      flex-wrap: wrap !important;
+      height: auto !important;
+    }
+
+    .portfolio-item {
+      position: relative !important;
+      left: 0 !important;
+      top: 0 !important;
+      margin-bottom: 30px;
+    }
+
+    .portfolio-card {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Style de la Pop-up */
+    .modal-content {
+      border-radius: 20px;
+      border: none;
+    }
+    .modal-header {
+      background-color: #f8f9fa;
+      border-bottom: 1px solid #eee;
+      border-radius: 20px 20px 0 0;
+    }
+    .project-feature-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .project-feature-list li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .project-feature-list li i {
+      color: #007bff;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body class="portfolio-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="resume.html">CV</a></li>
+          <li><a href="projet.html" class="active">Projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="portfolio" class="portfolio section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Découvrez mes réalisations récentes.</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4 isotope-container justify-content-center">
+
+          <div class="col-lg-4 col-md-6 portfolio-item" data-bs-toggle="modal" data-bs-target="#modalCalculatrice">
+            <div class="portfolio-card">
+              <div class="portfolio-img">
+                <img src="assets/img/portfolio/Capture d'écran 2026-02-22 224146.jpg" alt="Calculatrice" class="img-fluid">
+              </div>
+              <div class="portfolio-info p-3">
+                <h4>Calculatrice</h4>
+                <div class="portfolio-tags"><span class="badge bg-primary">Python</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item" data-bs-toggle="modal" data-bs-target="#modalHotel">
+            <div class="portfolio-card">
+              <div class="portfolio-img">
+                <img src="assets/img/portfolio/pageaccueil.png" alt="Hôtel Chambord" class="img-fluid">
+              </div>
+              <div class="portfolio-info p-3">
+                <h4>Hôtel Chambord</h4>
+                <div class="portfolio-tags"><span class="badge bg-success">HTML / CSS</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade" id="modalCalculatrice" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Description du projet</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row">
+            <div class="col-lg-5">
+            </div>
+            <div class="col-lg-7">
+              <h3 class="mb-3">Présentation du projet</h3>
+              <p>Le projet consiste en une calculatrice simple développée en <strong>Python</strong>, capable de réaliser les opérations de base : addition, soustraction, multiplication et division.</p>
+              <p>L’objectif est d’apprendre les notions de fonctions, conditions et gestion des erreurs en Python.</p>
+              
+              <h5 class="mt-4">Caractéristiques principales :</h5>
+              <ul class="project-feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Interface en ligne de commande</li>
+                <li><i class="bi bi-check-circle-fill"></i> Fonctions dédiées pour chaque opération</li>
+                <li><i class="bi bi-check-circle-fill"></i> Gestion des erreurs (division par zéro, saisie incorrecte)</li>
+                <li><i class="bi bi-check-circle-fill"></i> Expérience utilisateur améliorée (messages clairs)</li>
+              </ul>
+
+              <div class="alert alert-info mt-4">
+                <i class="bi bi-info-circle me-2"></i> Ce projet m’a permis de renforcer mes bases en Python et de comprendre la logique des programmes interactifs.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalHotel" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Description du projet</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row">
+            <div class="col-lg-5">
+            </div>
+            <div class="col-lg-7">
+              <h3 class="mb-3">Présentation du projet</h3>
+              <p>Le projet consiste en un site web pour l'Hôtel Chambord, un établissement fictif, avec une interface moderne et responsive. L'objectif est de présenter les chambres, les services, et de permettre aux visiteurs de réserver en ligne.</p>
+              <p>L'objectif est de présenter les chambres, les services, et de permettre aux visiteurs de réserver en ligne.</p>
+              
+              <h5 class="mt-4">Caractéristiques principales :</h5>
+              <ul class="project-feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Site web responsive adapté aux mobiles et tablettes</li>
+                <li><i class="bi bi-check-circle-fill"></i> Pages : Accueil, Chambres, Services, Réservation, Contact</li>
+                <li><i class="bi bi-check-circle-fill"></i> Formulaire de réservation fonctionnel avec validation des données</li>
+                <li><i class="bi bi-check-circle-fill"></i> Galerie d’images pour mettre en valeur les chambres et les espaces communs</li>
+                <li><i class="bi bi-check-circle-fill"></i> Navigation claire et expérience utilisateur optimisée</li>
+              </ul>
+
+              <div class="alert alert-info mt-4">
+                <i class="bi bi-info-circle me-2"></i> Ce projet m’a permis de renforcer mes compétences en HTML, CSS, JavaScript et en design web interactif.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -39,6 +39,50 @@
       transform: translateY(-10px);
     }
 
+    /* Couleur du titre principal "Portfolio" */
+.section-title h2 {
+  color: #ffffff !important; /* Ici c'est blanc, change le code hex pour une autre couleur */
+}
+
+/* Couleur du badge Python */
+.badge.bg-primary {
+    background-color: #3776ab !important; /* Le bleu officiel de Python */
+    color: white !important;
+}
+
+/* Couleur du badge HTML/CSS */
+.badge.bg-success {
+    background-color: #e34f26 !important; /* Le orange officiel de HTML5 */
+    color: white !important;
+}
+
+/* Couleur du texte sous le titre */
+.section-title p {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+/* Couleur des titres à l'intérieur des Pop-ups */
+.modal-title, .modal-body h3 {
+  color: #000000 !important; /* Noir pour les titres dans la fenêtre blanche */
+}
+
+/* Met le titre "Caractéristiques principales" en noir */
+.modal-body h5 {
+  color: #000000 !important;
+  font-weight: 300; /* Optionnel : pour le rendre un peu plus épais */
+}
+
+/* Met tout le texte de la liste à puces en noir */
+.project-feature-list li {
+  color: #000000 !important;
+}
+
+/* Garde les icônes en bleu pour le style, ou mets-les en noir aussi si tu préfères */
+.project-feature-list li i {
+  color: #007bff; /* Tu peux changer pour #000000 si tu veux tout en noir */
+}
+
     /* Style de la Pop-up */
     .modal-content {
       border-radius: 20px;
@@ -46,7 +90,7 @@
     }
     .modal-header {
       background-color: #f8f9fa;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid #000000;
       border-radius: 20px 20px 0 0;
     }
     .project-feature-list {

@@ -34,6 +34,42 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+<style>
+
+/* Centre la colonne */
+#contact .row {
+  justify-content: center;
+}
+
+/* Centre la box */
+.info-box {
+  margin: 0 auto;
+  width: fit-content; /* 🔥 clé du problème */
+}
+
+/* Chaque ligne */
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* Zone icône largeur fixe */
+.icon-box {
+  width: 35px;          /* largeur identique pour toutes */
+  text-align: center;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Texte aligné à gauche */
+.info-item .content {
+  text-align: left;
+}
+
+</style>
+
 </head>
 
 <body class="contact-page">
@@ -74,8 +110,8 @@
         <div class="row g-4 g-lg-5">
           <div class="col-lg-6">
             <div class="info-box" data-aos="fade-up" data-aos-delay="200">
-              <h3>Informations pour me contacter !</h3>
-              <p>Vous pouvez ici trouver mes coordonées :</p>
+              <h3>Informations pour me contacter</h3>
+              <p>Voici mes coordonées :</p>
 
               <div class="info-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box">

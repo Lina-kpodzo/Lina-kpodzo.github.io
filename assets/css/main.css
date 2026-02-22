@@ -87,6 +87,14 @@ h6 {
   font-family: var(--heading-font);
 }
 
+.hero-image img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
